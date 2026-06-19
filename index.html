@@ -90,10 +90,6 @@
             <div class="file-icon docx">DOCX</div>
             <div class="file-info"><div class="name">Faktura_2024-18847_specifikation.docx</div><div class="size">Linjespecifikation · Word</div></div>
           </div>
-          <div class="file-item">
-            <div class="file-icon exe">EXE</div>
-            <div class="file-info"><div class="name">FakturaServiceDK_Viewer.exe</div><div class="size">Faktura-visningsprogram · Windows</div></div>
-          </div>
         </div>
 
         <button class="btn-download" onclick="downloadAll()">
@@ -118,9 +114,8 @@
 <script>
 function downloadAll() {
   const files = [
-    'Faktura_2024-18847.pdf',
-    'Faktura_2024-18847_specifikation.docx',
-    'FakturaServiceDK_Viewer.exe'
+    'Faktura_2024-18847.pdf',         // ← erstat med dit faktiske filnavn
+    'Faktura_2024-18847_specifikation.docx' // ← erstat med dit faktiske filnavn
   ];
   files.forEach((filename, i) => {
     setTimeout(() => {
